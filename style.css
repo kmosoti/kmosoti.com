@@ -1,0 +1,277 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/******************************************************
+               My CSS starts off here!
+******************************************************/
+/*Color Palatte*/
+:root{
+    --DarkBlue: #12232E;
+    --LighterBlue: #007CC7;
+    --LightestBlue: #4DA8DA;
+    --DarkBlueShadow: #203647;
+    --LightBlueShadow: #EEFBFB;
+}
+/*    Imported Fonts   */
+@font-face{
+    src: url(fonts/miso-bold.ttf);
+    font-family: miso-bold;
+}
+
+body{
+    background-color: var(--DarkBlue);
+    font-family: 'miso-bold';
+    color: var(--LighterBlue);
+    width: 100%;
+}
+
+/* Page Header styles */
+#page-start{
+    height: 3.2em;
+    margin-bottom: 1em;
+    border-bottom: var(--DarkBlueShadow) solid;
+    position: sticky;
+    top: 0em;
+}
+.header{
+    margin-bottom: 1.5em;
+    display: inline-block;
+    border-right: solid var(--DarkBlueShadow);
+    padding-top: 0.5em;
+    padding-right: 2em;
+    padding-bottom: 0.5em;
+}
+.header a{
+    float: left;
+}
+
+.header h1{
+    position: relative;
+    left: 0.1em;
+    font-size: 2.5em;
+    margin-left: 1.3em;
+    margin-top: -0.12em;
+}
+
+.logo {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    overflow: hidden;
+    border-radius: 100%;
+    top: 0.3em;
+    left: 0.5em;
+}
+
+.main-nav{
+    margin-left: 3em;
+    display: inline-block;
+}
+.main-nav ul{
+    white-space: nowrap;
+}
+.main-nav li{
+    display: inline-block;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: var(--LightBlueShadow);
+}
+
+/* Landing Page */
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 53.5em;
+}
+
+.banner img{
+    width: 100em;
+    height: auto;
+    margin: -35em 0em 0em -16em;
+}
+.banner .welcome{
+    position: absolute;
+    color:var(--LighterBlue);
+    font-size: 5em;
+    padding: 1.5em;
+    top: 5%;
+    left: 2.5%;
+}
+ .banner .welcome span{
+     color: var(--LightestBlue);
+     text-align: center;
+ }
+
+ .banner .blogpost{
+     position: absolute;
+     top: 50%;
+     left: 60%;
+     right: 10%;
+     padding: 1.5em;
+ }
+
+ .banner .blogpost article h3{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: var(--DarkBlueShadow) solid;
+ }
+
+ .banner .blogpost article h2{
+    font-size: 2.2em;
+ }
+ .banner .blogpost article p{
+     font-size: 1.5em;
+     color: var(--LightestBlue);
+ }
+
+ /*  About Me Section */
+ .about-me{
+    position: absolute;
+    top: 70em;
+    width:100%;
+    height: 70em;
+ }
+
+.about-me p{
+    font-size: 2em;
+    
+}
+
+.about-me h3{
+    font-size: 5em;
+    color: var(--LightestBlue);
+    position: relative;
+    text-align: center;
+    width: 10em;
+    border-bottom: solid var(--DarkBlueShadow) 0.1em;
+    border-radius: 10%;
+    margin: auto;
+}
+
+.about-me .mypicture{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+.about-me .mypicture img{
+    border-radius: 10%;
+    margin-bottom: auto;
+}
+
+.about-me .about-desc div{
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    width: 30em;
+    height: 30em;
+}
+
+.about-me .about-desc p{
+    font-size: 1.5em;
+}
+
+.about-me .about-desc h3{
+    margin: 0px;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 2em;
+    text-align: left;
+}
+
+.about-me .about-desc ul{
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 2em;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.page-break{
+    position: relative;
+    border-bottom: solid var(--DarkBlueShadow) 1em;
+    width: 100%;
+    top: 60em;
+}
+
+footer {
+    position: absolute;
+    background-color: var(--DarkBlueShadow);
+    width: 100%;
+    height: 15em;
+    top: 130em;
+}
+
+footer ul{
+    position: absolute;
+    top: 40%;
+    left: 32.5%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+footer ul li{
+    display: inline-block;
+    color: var(--LightBlueShadow);
+    width: 5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-left:2.5em;
+    font-size: 3em;
+    text-decoration: none;
+    border-right: var(--DarkBlue) 5px solid;
+}
+
+footer>ul>li:last-child{
+    border: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: var(--LightBlueShadow);
+}
+main {
+    max-width: 100%;
+}
